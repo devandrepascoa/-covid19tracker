@@ -1,0 +1,55 @@
+.infoBox {
+    cursor: pointer;
+    flex: 1 1;
+}
+.infoBox__title{
+    font-weight:600;
+    color: rgba(145, 145, 145,1);
+}
+
+.infoBox__total {
+    font-weight:400;
+    color: rgba(100, 100, 100);
+}
+
+.infoBox__today.red {
+    color: #CC1034
+}
+
+.infoBox__today.green {
+    color: #7dd71d;
+}
+
+.infoBox__today.black {
+    color: #000000;
+}
+
+.infoBox.selected {
+    border-top: 10px solid;
+}
+
+.infoBox.red {
+    border-color: #CC1034;
+}
+
+.infoBox.green {
+    border-color: #7dd71d;
+}
+
+.infoBox.black {
+    border-color: #000000;
+}
+
+
+@media (max-width:750px) {
+    .infoBox .infoBox__title{
+        margin-bottom: 5px;
+        font-size: 4.3vw;
+    }
+    .infoBox .infoBox__today{
+        font-size: 3vw;
+    }
+    .infoBox .infoBox__total{
+        font-size: 3vw;
+    }
+}

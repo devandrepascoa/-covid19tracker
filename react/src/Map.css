@@ -1,0 +1,28 @@
+.map {
+    height: 600px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 20px;
+
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.20);
+}
+
+.map .leaflet-container {
+    height: 100%;
+}
+
+.map__popup img {
+    width: 100px;
+    border-radius: 5px;
+}
+
+.map__popup .country {
+    margin: 2px;
+    font-weight: bold;
+}
+
+.map__popup .data{
+    margin: 2px;
+}

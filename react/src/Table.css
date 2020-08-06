@@ -1,0 +1,77 @@
+.table {
+    display: flex;
+    margin-top: 20px;
+    overflow-y: scroll;
+    height: 400px;
+}
+
+.table table{
+    display:flex;
+    flex:1
+}
+
+.table tbody {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.table tr {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.table td {
+    display: flex;
+    flex: 1;
+    padding: px;
+}
+
+.table td > img {
+    width: 50px;
+    margin-left:5px;
+    align-self: center;
+    border: 1px solid black;
+}
+
+.table td:last-child {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.table .right-td strong {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+
+.table tr:nth-child(odd) {
+    background-color: rgb(230, 230, 230);
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    background: rgba(175, 175, 175, 0.8);
+    height: 50px;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(175, 175, 175, 0.8);
+}
