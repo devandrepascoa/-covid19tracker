@@ -4,6 +4,8 @@ import {
 
 } from '@material-ui/core'
 import './Table.css'
+import numeral from 'numeral'
+
 function Table({ countries =[]}) {
 
     return (
@@ -17,9 +19,9 @@ function Table({ countries =[]}) {
                             </td>
                             <td>{country.country}</td>
                             <td className="right-td">
-                                <p>Cases:<strong>{country.cases}</strong></p>
-                                <p>Recovered:<strong>{country.recovered}</strong></p>
-                                <p>Deaths:<strong>{country.deaths}</strong></p>
+                                <p>Cases:<strong>{numeral(country.cases).format("0.0a")}</strong></p>
+                                <p>Recovered:<strong>{numeral(country.recovered).format("0.0a")}</strong></p>
+                                <p>Deaths:<strong>{numeral(country.deaths).format("0.0a")}</strong></p>
                             </td>
                         </tr>
                     )}

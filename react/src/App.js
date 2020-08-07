@@ -83,7 +83,7 @@ function App() {
             <div className="app__information">
               <h3>Data By Country</h3>
               <Table countries={countryData} />
-              <h3>{(countryCode === "worldwide") ? "Worldwide" : countryData.find((e) => e.countryInfo.iso2 === countryCode).country} new cases</h3 >
+              <h3>{(countryCode === "worldwide") ? "Worldwide" : countryData.find((e) => e.countryInfo.iso2 === countryCode).country} new {type}</h3 >
               <Chart type={type} country={(countryCode === "worldwide") ? "worldwide" : countryData.find((e) => e.countryInfo.iso2 === countryCode).country}></Chart>
             </div>
           </CardContent>
